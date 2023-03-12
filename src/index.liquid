@@ -1,0 +1,35 @@
+
+
+<h1>jsTruthy={{ JS_TRUTHY }}</h1>
+
+{%- assign empty = "" %}
+{%- assign zero = 0 %}
+{%- assign bool = false %}
+
+{%- if empty == false %}
+  [EMPTY1] condition ok!
+{%- endif %}
+{%- if not empty %}
+  [EMPTY2] condition ok!
+{%- endif %}
+
+{%- if zero == false %}
+  [ZERO1] condition ok!
+{%- endif %}
+{%- if not zero %}
+  [ZERO2] condition ok!
+{%- endif %}
+
+{%- if bool == false %}
+  [BOOL1] condition ok!
+{%- endif %}
+{%- if not bool %}
+  [BOOL2] condition ok!
+{%- endif %}
+
+{%- if undef == false %}
+  [UNDEF1] condition ok!
+{%- endif %}
+{%- if not undef %}
+  [UNDEF2] condition ok!
+{%- endif %}
